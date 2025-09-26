@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Замовлення | CafeWeb</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📦 Замовлення</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="menu.html">Меню</a>
+      <a href="orders.html">Замовлення</a>
+      <a href="users.html">Користувачі</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Створити замовлення</h2>
+    <form id="orderForm">
+      <input type="text" id="customer" placeholder="Ваше ім'я" required />
+      <input type="text" id="item" placeholder="Страва" required />
+      <textarea id="comment" placeholder="Коментар"></textarea>
+      <button type="submit">Замовити</button>
+    </form>
+
+    <h2>Історія замовлень</h2>
+    <ul id="ordersList"><li>Немає замовлень...</li></ul>
+  </main>
+
+  <script src="orders.js"></script>
+</body>
+</html>
